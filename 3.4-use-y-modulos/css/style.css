@@ -1,0 +1,43 @@
+h1 {
+  padding: 20px;
+  color: rgb(109, 29, 195);
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+  padding: 15px;
+  color: rgb(109, 29, 195);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #131415;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav img {
+  width: 30px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

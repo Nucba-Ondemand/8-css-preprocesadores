@@ -1,0 +1,30 @@
+@use 'hero';
+@use 'mixin';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #131415;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  img {
+    height: 50px;
+  }
+}
+
+main {
+  height: calc(100vh - 100px);
+  @include mixin.flex(center, center);
+}

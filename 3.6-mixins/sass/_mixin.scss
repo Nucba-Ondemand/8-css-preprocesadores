@@ -1,0 +1,12 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin gradiente($color1, $color2) {
+  background: linear-gradient(to right, $color1, $color2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

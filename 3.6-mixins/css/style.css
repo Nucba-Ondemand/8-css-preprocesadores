@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.hero {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 0 40px;
+  max-width: 1200px;
+}
+.hero__text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.hero__text h1 {
+  font-size: 50px;
+  color: #2790b6;
+}
+.hero__text h1 span {
+  color: #fff;
+}
+.hero__text p {
+  font-size: 0.85rem;
+  color: gray;
+}
+.hero__text p span {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+.hero__text button {
+  border: none;
+  background: #1c6e8c;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #254156;
+  padding: 15px;
+  border-radius: 1rem;
+}
+.hero__card__img {
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/imgCard.jpg");
+  background-size: cover;
+  border-radius: 1rem;
+}
+.hero__card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero__card__info span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.hero__card__info__mentor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.hero__card__info__mentor img {
+  width: 100px;
+  border-radius: 10px;
+}
+.hero__card__info__mentor__datos {
+  display: flex;
+  flex-direction: column;
+}
+.hero__card__info__mentor__datos span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.hero__card__info__mentor__datos span:first-child {
+  color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #131415;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+header img {
+  height: 50px;
+}
+
+main {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

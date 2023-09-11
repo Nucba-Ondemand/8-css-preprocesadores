@@ -1,0 +1,27 @@
+@for $iterador from 1 through 4 {
+  .anim-#{$iterador} {
+    animation-name: animacion#{$iterador};
+
+    @keyframes animacion#{$iterador} {
+      100% {
+        transform: rotate(25deg * $iterador);
+      }
+    }
+
+    @if ($iterador == 1) {
+      @keyframes animacion#{$iterador} {
+        100% {
+          transform: translateY(25% * $iterador);
+        }
+      }
+    }
+
+    @if ($iterador == 3) {
+      @keyframes animacion#{$iterador} {
+        100% {
+          transform: translateY(25% * -$iterador);
+        }
+      }
+    }
+  }
+}

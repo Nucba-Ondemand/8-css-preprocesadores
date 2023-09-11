@@ -1,0 +1,94 @@
+@use 'mixin';
+
+.hero {
+  color: white;
+  @include mixin.flex(space-between, center);
+  gap: 50px;
+  padding: 0 40px;
+  max-width: 1200px;
+
+  &__text {
+    @include mixin.flex(center, flex-start);
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+
+    h1 {
+      font-size: 50px;
+      color: #2790b6;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: gray;
+      span {
+        @include mixin.gradiente(#30cfd0, #c43ad6);
+        font-weight: bold;
+      }
+    }
+
+    button {
+      border: none;
+      background: #1c6e8c;
+      color: white;
+      padding: 10px 12px;
+      border-radius: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #254156;
+  padding: 15px;
+  border-radius: 1rem;
+
+  &__img {
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/imgCard.jpg');
+    background-size: cover;
+    border-radius: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    span {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    &__mentor {
+      @include mixin.flex(flex-start, center);
+      gap: 10px;
+
+      img {
+        width: 100px;
+        border-radius: 10px;
+      }
+      &__datos {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 0.8rem;
+          font-weight: 400;
+
+          &:first-child {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}

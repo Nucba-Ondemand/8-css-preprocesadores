@@ -1,0 +1,14 @@
+@mixin theme($tema) {
+  @if $tema == light {
+    background-color: #fff;
+    color: #000;
+  } @else if $tema == dark {
+    background-color: #16181a;
+  } @else if $tema == alternative {
+    background-color: #0952a5;
+    span {
+      background: #fff;
+      color: #0952a5;
+    }
+  }
+}

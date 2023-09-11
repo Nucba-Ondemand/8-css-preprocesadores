@@ -1,0 +1,39 @@
+.titulo {
+  color: #fff;
+  padding: 15px;
+
+  &--span {
+    text-decoration: underline;
+  }
+}
+
+.section {
+  padding: 15px;
+
+  &__titulo {
+    color: crimson;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__parrafo {
+    color: #fff;
+    font-size: 1.1rem;
+
+    &--span {
+      color: crimson;
+      font-weight: 800;
+    }
+  }
+}
+
+.otraSection {
+  @extend .section;
+  margin-left: 20px;
+
+  &__parrafo {
+    @extend .section__parrafo;
+  }
+}

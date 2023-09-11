@@ -1,0 +1,80 @@
+@use 'mixin';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+
+  &__card {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px;
+
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+
+      &__texto {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+          font-size: 2em;
+          line-height: 1;
+        }
+
+        p {
+          font-size: 1.1em;
+        }
+      }
+
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        font-size: 1.2em;
+        height: 50px;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.light {
+  @include mixin.theme(light);
+}
+
+.dark {
+  @include mixin.theme(dark);
+}
+
+.alternative {
+  @include mixin.theme(alternative);
+}

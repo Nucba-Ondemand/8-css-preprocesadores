@@ -1,0 +1,13 @@
+@use 'globalStyles';
+
+h1 {
+  padding: 20px;
+  color: globalStyles.$text-color;
+  font-family: globalStyles.$font;
+}
+
+p {
+  font-size: 1.1rem;
+  padding: 15px;
+  color: globalStyles.$text-color;
+}
